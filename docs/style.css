@@ -1,245 +1,245 @@
 @font-face {
-  font-family: "Segoe Print";
-  src: url("./Fonts/SegoePrint.eot");
-  src: url("./Fonts/SegoePrint.eot?#iefix") format("embedded-opentype"),
-    url("./Fonts/SegoePrint.woff2") format("woff2"),
-    url("./Fonts/SegoePrint.woff") format("woff"),
-    url("./Fonts/SegoePrint.ttf") format("truetype"),
-    url("./Fonts/SegoePrint.svg#SegoePrint") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Segoe Print";
+    src: url("./Fonts/SegoePrint.eot");
+    src: url("./Fonts/SegoePrint.eot?#iefix") format("embedded-opentype"),
+        url("./Fonts/SegoePrint.woff2") format("woff2"),
+        url("./Fonts/SegoePrint.woff") format("woff"),
+        url("./Fonts/SegoePrint.ttf") format("truetype"),
+        url("./Fonts/SegoePrint.svg#SegoePrint") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Segoe Print";
-  src: url("./Fonts/SegoePrint-Bold.eot");
-  src: url("./Fonts/SegoePrint-Bold.eot?#iefix") format("embedded-opentype"),
-    url("./Fonts/SegoePrint-Bold.woff2") format("woff2"),
-    url("./Fonts/SegoePrint-Bold.woff") format("woff"),
-    url("./Fonts/SegoePrint-Bold.ttf") format("truetype"),
-    url("./Fonts/SegoePrint-Bold.svg#SegoePrint-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Segoe Print";
+    src: url("./Fonts/SegoePrint-Bold.eot");
+    src: url("./Fonts/SegoePrint-Bold.eot?#iefix") format("embedded-opentype"),
+        url("./Fonts/SegoePrint-Bold.woff2") format("woff2"),
+        url("./Fonts/SegoePrint-Bold.woff") format("woff"),
+        url("./Fonts/SegoePrint-Bold.ttf") format("truetype"),
+        url("./Fonts/SegoePrint-Bold.svg#SegoePrint-Bold") format("svg");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
 
-  50% {
-    transform: rotate(180deg);
-  }
+    50% {
+        transform: rotate(180deg);
+    }
 
-  100% {
-    transform: rotate(360deg);
-  }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes spin-reverse {
-  0% {
-    transform: rotate(360deg);
-  }
+    0% {
+        transform: rotate(360deg);
+    }
 
-  50% {
-    transform: rotate(-180deg);
-  }
+    50% {
+        transform: rotate(-180deg);
+    }
 
-  100% {
-    transform: rotate(00deg);
-  }
+    100% {
+        transform: rotate(00deg);
+    }
 }
 
 :root {
-  --blue: #3c31dd;
-  --red: #dd3f31;
-  --pink: #ff0066;
-  --text-primary: #b6b6b6;
-  --text-secondary: #ececec;
-  --background-primary: #0f0f0f;
-  --background-secondary: #202731;
-  --transition-speed: 900;
-  --mouse-x: 50vw;
-  --mouse-y: 50vh;
-  --row-gap: 3rem;
-  font-size: 16px;
-  font-family: "Prompt", sans-serif;
+    --blue: #3c31dd;
+    --red: #dd3f31;
+    --pink: #ff0066;
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --background-primary: #0f0f0f;
+    --background-secondary: #202731;
+    --transition-speed: 900;
+    --mouse-x: 50vw;
+    --mouse-y: 50vh;
+    --row-gap: 3rem;
+    font-size: 16px;
+    font-family: "Prompt", sans-serif;
 }
 
 body {
-  color: white;
-  font-family: "Segoe Script";
-  background-color: var(--background-primary);
-  overflow: scroll;
-  overflow-x: hidden;
-  margin: 0px;
-  padding: 0px;
+    color: white;
+    font-family: "Segoe Script";
+    background-color: var(--background-primary);
+    overflow: scroll;
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
 }
 
 body::-webkit-scrollbar {
-  width: 0.25rem;
-  background-color: #1e1e24;
+    width: 0.25rem;
+    background-color: #1e1e24;
 }
 
 body::-webkit-scrollbar-track {
-  background-color: #1e1e24;
+    background-color: #1e1e24;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #6649b8;
+    background-color: #6649b8;
 }
 
 main {
-  margin-left: 5rem;
-  padding: 1rem;
+    margin-left: 5rem;
+    padding: 1rem;
 }
 
 h1 {
-  font-size: 3rem;
+    font-size: 3rem;
 }
 
 .navbar {
-  position: fixed;
-  background-color: var(--background-secondary);
-  transition: width 500ms ease;
-  z-index: 10;
+    position: fixed;
+    background-color: var(--background-secondary);
+    transition: width 500ms ease;
+    z-index: 10;
 }
 
 .navbar-nav {
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  height: 100%;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 100%;
 }
 
 .nav-item {
-  width: 100%;
+    width: 100%;
 }
 
 .nav-item:last-child {
-  margin-top: auto;
+    margin-top: auto;
 }
 
 .nav-link {
-  display: flex;
-  align-items: center;
-  height: 5rem;
-  color: var(--text-primary);
-  text-decoration: none;
-  filter: grayscale(100%) opacity(0.7);
-  transition: var(--transition-speed);
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: var(--transition-speed);
 }
 
 .link-text {
-  display: none;
-  margin-left: 1rem;
+    display: none;
+    margin-left: 1rem;
 }
 
 .nav-link svg {
-  min-width: 2rem;
-  margin: 0 1.5rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
 }
 
 .fa-primary {
-  color: #df49a6;
-  fill: #df49a6;
-  transition: var(--transition-speed);
+    color: #df49a6;
+    fill: #df49a6;
+    transition: var(--transition-speed);
 }
 
 .logo {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  text-align: center;
-  color: var(--text-primary);
-  background-color: var(--background-primary);
-  letter-spacing: 0.3ch;
-  width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-primary);
+    background-color: var(--background-primary);
+    letter-spacing: 0.3ch;
+    width: 100%;
 }
 
 /* Small Screens */
 @media only screen and (max-width: 600px) {
-  .navbar {
-    bottom: 0px;
-    width: 100vw;
-    height: 5rem;
-  }
+    .navbar {
+        bottom: 0px;
+        width: 100vw;
+        height: 5rem;
+    }
 
-  .logo {
-    display: none;
-  }
+    .logo {
+        display: none;
+    }
 
-  .navbar-nav {
-    flex-direction: row;
-  }
+    .navbar-nav {
+        flex-direction: row;
+    }
 
-  .nav-link {
-    justify-content: center;
-  }
+    .nav-link {
+        justify-content: center;
+    }
 
-  html body .hidden {
-    transition: none;
-  }
+    html body .hidden {
+        transition: none;
+    }
 
-  main {
-    margin: 0px;
-    padding: 0px;
-  }
+    main {
+        margin: 0px;
+        padding: 0px;
+    }
 }
 
 /* Large Screens */
 @media only screen and (min-width: 600px) {
-  body {
-    zoom: 80%;
-  }
+    body {
+        zoom: 80%;
+    }
 
-  .navbar {
-    top: 0px;
-    width: 5rem;
-    height: 100%;
-  }
+    .navbar {
+        top: 0px;
+        width: 5rem;
+        height: 100%;
+    }
 
-  .navbar:hover {
-    width: 16rem;
-  }
+    .navbar:hover {
+        width: 16rem;
+    }
 
-  .nav-link:hover {
-    filter: grayscale(0%) opacity(1);
-    background-color: var(--background-primary);
-    color: var(--text-primary);
-  }
+    .nav-link:hover {
+        filter: grayscale(0%) opacity(1);
+        background-color: var(--background-primary);
+        color: var(--text-primary);
+    }
 
-  .logo svg {
-    animation: spin-reverse 1s ease-in-out;
-  }
+    .logo svg {
+        animation: spin-reverse 1s ease-in-out;
+    }
 
-  .navbar:hover .logo svg {
-    animation: spin 1s ease-in-out;
-  }
+    .navbar:hover .logo svg {
+        animation: spin 1s ease-in-out;
+    }
 
-  .navbar:hover .link-text {
-    display: inline;
-  }
+    .navbar:hover .link-text {
+        display: inline;
+    }
 }
 
 /* Main grid of tutorials */
 main {
-  padding: 100px 20vw;
+    padding: 100px 20vw;
 }
 
 div.cont {
-  display: grid;
-  row-gap: var(--row-gap);
-  column-gap: var(--row-gap);
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto auto;
+    display: grid;
+    row-gap: var(--row-gap);
+    column-gap: var(--row-gap);
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
 }
 
 section.item {
-  border: var(--background-primary) 5px solid;
+    border: white 5px solid;
 }

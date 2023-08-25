@@ -228,8 +228,11 @@ h1 {
 }
 
 /* Main grid of tutorials */
-main.cont {
+main {
   padding: 100px 20vw;
+}
+
+div.cont {
   display: grid;
   row-gap: var(--row-gap);
   column-gap: var(--row-gap);
